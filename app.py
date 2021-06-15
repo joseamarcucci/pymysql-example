@@ -8,10 +8,10 @@ import socket
 import socks
 
 try:
-    QG_ENVVAR = os.environ['QUOTAGUARDSTATIC_URL']
+    QG_ENVVAR = os.environ['http://ei6z5sz4ag4ds7:ehfv7imkeokiydd85aa2cun7lih@us-east-static-07.quotaguard.com:9293']
 except KeyError:
     try:
-        QG_ENVVAR = os.environ['QUOTAGUARDSHIELD_URL']
+        QG_ENVVAR = os.environ['http://ei6z5sz4ag4ds7:ehfv7imkeokiydd85aa2cun7lih@us-east-static-07.quotaguard.com:9293']
     except KeyError:
         print("Missing QUOTAGUARDSTATIC_URL and QUOTAGUARDSHIELD_URL. Exiting")
         exit(1)
